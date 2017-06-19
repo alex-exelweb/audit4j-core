@@ -10,7 +10,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * The class <code>AuditBaseTest</code> contains tests for the class <code>{@link Event}</code>.
+ * The class <code>AuditBaseTest</code> contains tests for the class <code>{@link EventImpl}</code>.
  *
  * @generatedBy CodePro at 2/4/15 9:27 AM
  * @author JanithB
@@ -25,7 +25,7 @@ public class AuditBaseTest {
     @Test
     public void testAuditBase_1()
         throws Exception {
-        Event result = new Event();
+        Event result = new EventImpl();
         assertNotNull(result);
         // add additional test code here
     }
@@ -40,7 +40,7 @@ public class AuditBaseTest {
     @Test
     public void testGetAuditId_1()
         throws Exception {
-        Event fixture = new Event();
+        Event fixture = new EventImpl();
         fixture.setUuid(new Long(1L));
         fixture.setAuditId(new Integer(1));
         fixture.setTimestamp(new Date());
@@ -68,7 +68,7 @@ public class AuditBaseTest {
     @Test
     public void testGetTimestamp_1()
         throws Exception {
-        Event fixture = new Event();
+        Event fixture = new EventImpl();
         fixture.setUuid(new Long(1L));
         fixture.setAuditId(new Integer(1));
         fixture.setTimestamp(new Date());
@@ -91,7 +91,7 @@ public class AuditBaseTest {
     @Test
     public void testGetUuid_1()
         throws Exception {
-        Event fixture = new Event();
+        Event fixture = new EventImpl();
         fixture.setUuid(new Long(1L));
         fixture.setAuditId(new Integer(1));
         fixture.setTimestamp(new Date());
@@ -119,7 +119,7 @@ public class AuditBaseTest {
     @Test
     public void testSetAuditId_1()
         throws Exception {
-        Event fixture = new Event();
+        Event fixture = new EventImpl();
         fixture.setUuid(new Long(1L));
         fixture.setAuditId(new Integer(1));
         fixture.setTimestamp(new Date());
@@ -140,7 +140,7 @@ public class AuditBaseTest {
     @Test
     public void testSetTimestamp_1()
         throws Exception {
-        Event fixture = new Event();
+        Event fixture = new EventImpl();
         fixture.setUuid(new Long(1L));
         fixture.setAuditId(new Integer(1));
         fixture.setTimestamp(new Date());
@@ -161,7 +161,7 @@ public class AuditBaseTest {
     @Test
     public void testSetUuid_1()
         throws Exception {
-        Event fixture = new Event();
+        Event fixture = new EventImpl();
         fixture.setUuid(new Long(1L));
         fixture.setAuditId(new Integer(1));
         fixture.setTimestamp(new Date());

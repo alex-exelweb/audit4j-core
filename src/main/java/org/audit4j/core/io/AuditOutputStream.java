@@ -19,6 +19,7 @@
 package org.audit4j.core.io;
 
 import org.audit4j.core.dto.AuditEvent;
+import org.audit4j.core.dto.AuditEventImpl;
 
 /**
  * The Interface AuditOutputStream.

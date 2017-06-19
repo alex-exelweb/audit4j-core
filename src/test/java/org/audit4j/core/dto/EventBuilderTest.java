@@ -13,7 +13,7 @@ public class EventBuilderTest {
     public void testEventBuilder() {
         StopWatch watch = new StopWatch();
         watch.start("builder");
-        EventBuilder builder = new EventBuilder();
+        EventBuilder builder = new EventBuilderImpl();
         builder.addActor("Actor").addAction("myMethod").addOrigin("Origin1").addField("myParam1Name", "param1")
                 .addField("myParam2Name", new Integer(2));
         AuditEvent event = builder.build();

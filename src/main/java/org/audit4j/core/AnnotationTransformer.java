@@ -20,6 +20,7 @@ package org.audit4j.core;
 
 import org.audit4j.core.dto.AnnotationAuditEvent;
 import org.audit4j.core.dto.AuditEvent;
+import org.audit4j.core.dto.AuditEventImpl;
 
 /**
  * Interface for different annotation transformer implementations. This can be

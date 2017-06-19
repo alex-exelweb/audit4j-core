@@ -32,6 +32,7 @@ import javax.servlet.http.HttpSession;
 
 import org.audit4j.core.AuditManager;
 import org.audit4j.core.dto.EventBuilder;
+import org.audit4j.core.dto.EventBuilderImpl;
 
 /**
  * The Class Auditfilter.
@@ -86,7 +87,7 @@ public class AuditFilter implements Filter {
         String ipAddress = request.getRemoteAddr();
         String url = request.getRequestURL().toString();
 
-        EventBuilder builder = new EventBuilder();
+        EventBuilder builder = new EventBuilderImpl();
         builder.addAction(url).addOrigin(ipAddress);
         if (actor == null) {
             builder.addActor(ipAddress);

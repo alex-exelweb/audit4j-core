@@ -4,6 +4,7 @@ import static org.junit.Assert.assertNotNull;
 
 import org.audit4j.core.Audit4jTestBase;
 import org.audit4j.core.dto.AuditEvent;
+import org.audit4j.core.dto.AuditEventImpl;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -43,7 +44,7 @@ public class SecureLayoutTest extends Audit4jTestBase{
         fixture.init();
         fixture.setSalt("232332324");
         fixture.setKey("Aud1T4jSecureKey");
-        AuditEvent event = new AuditEvent();
+        AuditEvent event = new AuditEventImpl();
 
         String result = fixture.format(event);
 
@@ -65,7 +66,7 @@ public class SecureLayoutTest extends Audit4jTestBase{
         fixture.init();
         fixture.setSalt("232332324");
         fixture.setKey("Aud1T4jSecureKey");
-        AuditEvent event = new AuditEvent();
+        AuditEvent event = new AuditEventImpl();
 
         String result = fixture.format(event);
 

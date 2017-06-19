@@ -13,7 +13,7 @@ import org.junit.Test;
 
 /**
  * The class <code>AuditEventTest</code> contains tests for the class
- * <code>{@link AuditEvent}</code>.
+ * <code>{@link AuditEventImpl}</code>.
  *
  * @generatedBy CodePro at 2/4/15 9:27 AM
  * @author JanithB
@@ -30,7 +30,7 @@ public class AuditEventTest {
     @Test
     public void testAuditEvent_1() throws Exception {
 
-        AuditEvent result = new AuditEvent();
+        AuditEvent result = new AuditEventImpl();
 
         // add additional test code here
         assertNotNull(result);
@@ -53,7 +53,7 @@ public class AuditEventTest {
         String actor = "";
         String action = "";
 
-        AuditEvent result = new AuditEvent(actor, action);
+        AuditEvent result = new AuditEventImpl(actor, action);
 
         // add additional test code here
         assertNotNull(result);
@@ -76,7 +76,7 @@ public class AuditEventTest {
         String actor = "";
         String action = "";
 
-        AuditEvent result = new AuditEvent(actor, action);
+        AuditEvent result = new AuditEventImpl(actor, action);
 
         // add additional test code here
         assertNotNull(result);
@@ -99,7 +99,7 @@ public class AuditEventTest {
         String action = "";
         String origin = "";
 
-        AuditEvent result = new AuditEvent(actor, action, origin);
+        AuditEvent result = new AuditEventImpl(actor, action, origin);
 
         // add additional test code here
         assertNotNull(result);
@@ -123,7 +123,7 @@ public class AuditEventTest {
         String action = "";
         String origin = "";
 
-        AuditEvent result = new AuditEvent(actor, action, origin);
+        AuditEvent result = new AuditEventImpl(actor, action, origin);
 
         // add additional test code here
         assertNotNull(result);
@@ -143,7 +143,7 @@ public class AuditEventTest {
      */
     @Test
     public void testAddField_1() throws Exception {
-        AuditEvent fixture = new AuditEvent("", "", "", new Field[] {});
+        AuditEvent fixture = new AuditEventImpl("", "", "", new Field[] {});
         fixture.setFields(new ReadMostlyVector());
         Field field = new Field();
 
@@ -161,7 +161,7 @@ public class AuditEventTest {
      */
     @Test
     public void testAddField_2() throws Exception {
-        AuditEvent fixture = new AuditEvent("", "", "", new Field[] {});
+        AuditEvent fixture = new AuditEventImpl("", "", "", new Field[] {});
         fixture.setFields(new ReadMostlyVector());
         String name = "";
         Object value = new Object();
@@ -180,7 +180,7 @@ public class AuditEventTest {
      */
     @Test
     public void testAddField_3() throws Exception {
-        AuditEvent fixture = new AuditEvent("", "", "", new Field[] {});
+        AuditEvent fixture = new AuditEventImpl("", "", "", new Field[] {});
         fixture.setFields(new ReadMostlyVector());
         String name = "";
         Object value = null;
@@ -199,7 +199,7 @@ public class AuditEventTest {
      */
     @Test
     public void testAddField_4() throws Exception {
-        AuditEvent fixture = new AuditEvent("", "", "", new Field[] {});
+        AuditEvent fixture = new AuditEventImpl("", "", "", new Field[] {});
         fixture.setFields(new ReadMostlyVector());
         String name = "";
         Object value = new Object();
@@ -219,7 +219,7 @@ public class AuditEventTest {
      */
     @Test
     public void testAddField_5() throws Exception {
-        AuditEvent fixture = new AuditEvent("", "", "", new Field[] {});
+        AuditEvent fixture = new AuditEventImpl("", "", "", new Field[] {});
         fixture.setFields(new ReadMostlyVector());
         String name = "";
         Object value = null;
@@ -239,7 +239,7 @@ public class AuditEventTest {
      */
     @Test
     public void testGetAction_1() throws Exception {
-        AuditEvent fixture = new AuditEvent("", "", "", new Field[] {});
+        AuditEvent fixture = new AuditEventImpl("", "", "", new Field[] {});
         fixture.setFields(new ReadMostlyVector());
 
         String result = fixture.getAction();
@@ -257,7 +257,7 @@ public class AuditEventTest {
      */
     @Test
     public void testGetActor_1() throws Exception {
-        AuditEvent fixture = new AuditEvent("", "", "", new Field[] {});
+        AuditEvent fixture = new AuditEventImpl("", "", "", new Field[] {});
         fixture.setFields(new ReadMostlyVector());
 
         String result = fixture.getActor();
@@ -275,7 +275,7 @@ public class AuditEventTest {
      */
     @Test
     public void testGetFields_1() throws Exception {
-        AuditEvent fixture = new AuditEvent("", "", "", new Field[] {});
+        AuditEvent fixture = new AuditEventImpl("", "", "", new Field[] {});
         fixture.setFields(new ReadMostlyVector());
 
         List<Field> result = fixture.getFields();
@@ -294,7 +294,7 @@ public class AuditEventTest {
      */
     @Test
     public void testGetOrigin_1() throws Exception {
-        AuditEvent fixture = new AuditEvent("", "", "", new Field[] {});
+        AuditEvent fixture = new AuditEventImpl("", "", "", new Field[] {});
         fixture.setFields(new ReadMostlyVector());
 
         String result = fixture.getOrigin();
@@ -312,7 +312,7 @@ public class AuditEventTest {
      */
     @Test
     public void testSetAction_1() throws Exception {
-        AuditEvent fixture = new AuditEvent("", "", "", new Field[] {});
+        AuditEvent fixture = new AuditEventImpl("", "", "", new Field[] {});
         fixture.setFields(new ReadMostlyVector());
         String action = "";
 
@@ -330,7 +330,7 @@ public class AuditEventTest {
      */
     @Test
     public void testSetActor_1() throws Exception {
-        AuditEvent fixture = new AuditEvent("", "", "", new Field[] {});
+        AuditEvent fixture = new AuditEventImpl("", "", "", new Field[] {});
         fixture.setFields(new ReadMostlyVector());
         String actor = "";
 
@@ -348,7 +348,7 @@ public class AuditEventTest {
      */
     @Test
     public void testSetFields_1() throws Exception {
-        AuditEvent fixture = new AuditEvent("", "", "", new Field[] {});
+        AuditEvent fixture = new AuditEventImpl("", "", "", new Field[] {});
         fixture.setFields(new ReadMostlyVector());
         List<Field> fields = new ReadMostlyVector();
 
@@ -366,7 +366,7 @@ public class AuditEventTest {
      */
     @Test
     public void testSetOrigin_1() throws Exception {
-        AuditEvent fixture = new AuditEvent("", "", "", new Field[] {});
+        AuditEvent fixture = new AuditEventImpl("", "", "", new Field[] {});
         fixture.setFields(new ReadMostlyVector());
         String origin = "";
 

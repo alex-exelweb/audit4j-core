@@ -19,11 +19,11 @@
 package org.audit4j.core.handler;
 
 import java.io.Serializable;
-import java.util.HashMap;
 import java.util.Map;
 
 import org.audit4j.core.Initializable;
 import org.audit4j.core.dto.AuditEvent;
+import org.audit4j.core.dto.AuditEventImpl;
 import org.audit4j.core.exception.HandlerException;
 
 /**

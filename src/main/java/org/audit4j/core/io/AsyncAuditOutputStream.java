@@ -21,6 +21,7 @@ package org.audit4j.core.io;
 import org.audit4j.core.dto.AnnotationAuditEvent;
 import org.audit4j.core.dto.AuditEvent;
 
+import org.audit4j.core.dto.AuditEventImpl;
 import reactor.core.Environment;
 import reactor.core.composable.Deferred;
 import reactor.core.composable.Stream;

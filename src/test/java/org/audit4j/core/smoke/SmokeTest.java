@@ -6,6 +6,7 @@ import org.audit4j.core.AuditManager;
 import org.audit4j.core.IAuditManager;
 import org.audit4j.core.dto.AuditEvent;
 import org.audit4j.core.dto.EventBuilder;
+import org.audit4j.core.dto.EventBuilderImpl;
 import org.audit4j.core.util.Log;
 import org.audit4j.core.util.StopWatch;
 import org.junit.Test;
@@ -17,7 +18,7 @@ public class SmokeTest {
         StopWatch watch = new StopWatch();
         watch.start("smoke");
         String actor = "Dummy Actor";
-        EventBuilder builder = new EventBuilder();
+        EventBuilder builder = new EventBuilderImpl();
         builder.addActor(actor).addAction("myMethod").addOrigin("Origin1").addField("myParam1Name", "param1")
                 .addField("myParam2Name", new Integer(2));
         AuditEvent event = builder.build();
@@ -42,7 +43,7 @@ public class SmokeTest {
         IAuditManager manager = AuditManager.getInstance();
         int count = 0;
         while (count < 100000) {
-            EventBuilder builder = new EventBuilder();
+            EventBuilder builder = new EventBuilderImpl();
             builder.addActor("Dummy Actor").addAction("myMethod").addOrigin("Origin1")
                     .addField("myParam1Name", "param1").addField("myParam2Name", new Integer(2));
             AuditEvent event = builder.build();

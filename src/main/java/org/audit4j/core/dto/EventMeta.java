@@ -3,60 +3,16 @@ package org.audit4j.core.dto;
 import java.io.Serializable;
 
 /**
- * The Class EventMeta.
- * 
- * @author <a href="mailto:janith3000@gmail.com">Janith Bandara</a>
- * 
- * @since 2.4.0
+ * Created by User on 18/06/2017.
  */
-public class EventMeta implements Serializable {
+public interface EventMeta extends Serializable {
+    String getClient();
 
-	private static final long serialVersionUID = 5190838195346568817L;
+    void setClient(String client);
 
-	/** The client. */
-	public String client;
+    @Deprecated
+    String getRepository();
 
-	/** The repository. */
-	@Deprecated
-	public String repository;
-
-	/**
-	 * Gets the client.
-	 * 
-	 * @return the client
-	 */
-	public String getClient() {
-		return client;
-	}
-
-	/**
-	 * Sets the client.
-	 * 
-	 * @param client
-	 *            the new client
-	 */
-	public void setClient(String client) {
-		this.client = client;
-	}
-
-	/**
-	 * Gets the repository.
-	 * 
-	 * @return the repository
-	 */
-	@Deprecated
-	public String getRepository() {
-		return repository;
-	}
-
-	/**
-	 * Sets the repository.
-	 * 
-	 * @param repository
-	 *            the new repository
-	 */
-	@Deprecated
-	public void setRepository(String repository) {
-		this.repository = repository;
-	}
+    @Deprecated
+    void setRepository(String repository);
 }

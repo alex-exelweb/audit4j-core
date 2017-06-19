@@ -3,6 +3,7 @@ package org.audit4j.core.layout;
 import static org.junit.Assert.assertNotNull;
 
 import org.audit4j.core.dto.AuditEvent;
+import org.audit4j.core.dto.AuditEventImpl;
 import org.audit4j.core.dto.Field;
 import org.junit.After;
 import org.junit.Before;
@@ -40,7 +41,7 @@ public class SimpleLayoutTest {
     public void testFormat_1()
         throws Exception {
         SimpleLayout fixture = new SimpleLayout();
-        AuditEvent event = new AuditEvent("", "", "", new Field[] {});
+        AuditEvent event = new AuditEventImpl("", "", "", new Field[] {});
        // event.setFields(new ReadMostlyVector());
 
         String result = fixture.format(event);

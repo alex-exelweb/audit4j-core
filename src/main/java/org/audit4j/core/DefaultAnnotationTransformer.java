@@ -29,6 +29,7 @@ import org.audit4j.core.annotation.DeIdentify;
 import org.audit4j.core.annotation.IgnoreAudit;
 import org.audit4j.core.dto.AnnotationAuditEvent;
 import org.audit4j.core.dto.AuditEvent;
+import org.audit4j.core.dto.AuditEventImpl;
 import org.audit4j.core.dto.Field;
 
 /**
@@ -68,7 +69,7 @@ public class DefaultAnnotationTransformer implements AnnotationTransformer<Audit
 
 		if (annotationEvent.getClazz().isAnnotationPresent(Audit.class)
 				&& !annotationEvent.getMethod().isAnnotationPresent(IgnoreAudit.class)) {
-			event = new AuditEvent();
+			event = new AuditEventImpl();
 			Audit audit = annotationEvent.getClazz().getAnnotation(Audit.class);
 
 			// Extract fields
@@ -89,7 +90,7 @@ public class DefaultAnnotationTransformer implements AnnotationTransformer<Audit
 			event.setOrigin(annotationEvent.getOrigin());
 		} else if (!annotationEvent.getClazz().isAnnotationPresent(Audit.class)
 				&& annotationEvent.getMethod().isAnnotationPresent(Audit.class)) {
-			event = new AuditEvent();
+			event = new AuditEventImpl();
 			Audit audit = annotationEvent.getMethod().getAnnotation(Audit.class);
 
 			// Extract fields
